@@ -2,11 +2,16 @@
   "manifest_version": 3,
   "name": "YouTube Play Assist",
   "version": "1.0.0",
-  "description": "YouTubeの再生速度変更、10秒移動、区間ループを動画上のパネルから操作します。",
+  "description": "Adds playback speed controls, 10-second rewind and forward buttons, and A–B looping to YouTube.",
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["playback-utils.js", "content.js"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "playback-utils.js",
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]
